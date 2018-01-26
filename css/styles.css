@@ -1,4 +1,8 @@
 /* CSS Style Sheet */
+body{
+	background-color: #DDFFDD;
+}
+
 img{
 	max-width: 100%;
 }
@@ -9,13 +13,9 @@ header{
 }
 
 header img{
-	max-width: 30%;
+	max-width: 15em;
 	margin-top: -.5em;
     margin-bottom: -.9em;
-}
-
-#mathLogo{/*doesn't seem to work*/
-	margin-top: 1em;
 }
 
 nav{
@@ -36,6 +36,7 @@ nav li{
 	margin: 0em;
 	padding: 0.5em;
 	padding-left: 0;
+	padding-right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
@@ -53,20 +54,26 @@ nav li a{
 }
 
 .halfLinkLeft{
-	width: 47%;
-	/* display: inline; */
+	width: 50%;
 	float: left;
+	margin-bottom: 0.5em;
 }
 
 .halfLinkRight{
-	width: 47%;
-	/* display: inline; */
+	width: 50%;
 	float: right;
+	margin-bottom: 0.5em;
+}
+
+main h2{
+	margin-left: 10%;
+	text-decoration: underline overline;
+	text-decoration-color: darkgreen;
 }
 
 main h3{
-	margin-left: 10%;
-	text-decoration: underline overline;
+	margin-left: 15%;
+	
 }
 
 main p{
@@ -122,6 +129,10 @@ th{
 
 /*tablet view*/
 @media only screen and (min-width: 660px){
+	nav{
+		margin-bottom: 4em;
+	}
+	
 	nav li, .halfLinkLeft, .halfLinkRight{
 		display: inline;
 		float: left;
@@ -129,6 +140,7 @@ th{
 		margin-right: 0.5%;
 		padding-left: 0;
 		padding-right: 0;
+		
 		width: 19%;
 		white-space: nowrap;
 		border-radius: 0;
