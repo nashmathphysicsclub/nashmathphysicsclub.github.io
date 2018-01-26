@@ -123,6 +123,10 @@ th{
 	color: #FFFFFF;
 }
 
+tr:nth-child(even){
+	background-color: #AACCAA;
+}
+
 .mobile{
 	display: inline;
 }
